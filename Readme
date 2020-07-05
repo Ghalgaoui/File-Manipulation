@@ -1,0 +1,3 @@
+1- Copy change script on /usr/bin dir
+2- Compile the source => $ make
+3- Execute binary => $ make execute
