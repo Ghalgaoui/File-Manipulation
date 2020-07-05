@@ -1,0 +1,12 @@
+#! /bin/sh
+
+change() {
+	OLD_VALUE=$1
+	NEW_VALUE=$2
+	FILE=$3
+	sed "s|$OLD_VALUE|$NEW_VALUE|g" $FILE > temp_file
+	rm $3
+	mv temp_file $3
+}
+
+change "$1" "$2" "$3"
